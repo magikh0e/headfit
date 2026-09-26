@@ -58,6 +58,23 @@ python -m http.server 8000
 There is no build step and no dependency to install. Three.js is inlined in the
 file, which is most of its size.
 
+## Support
+
+Free and open source, written in my own time, with no accounts, tracking or
+ads. If it has saved you a helmet's worth of filament, a beer helps.
+
+[![Buy me a beer](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20beer&emoji=%F0%9F%8D%BA&slug=magikh0e&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/magikh0e)
+
+A helmet that fit in here and not on your head is the single most useful thing
+you can report, with the three measurements you used and the model you tried.
+That is the case the model is there to get right, and I only have my own head
+to check it against.
+
+Something broken goes in [Issues](https://github.com/magikh0e/headfit/issues).
+Measurements that came out wrong, a mask the seal detection could not find an
+edge on, or a head shape the superellipse cannot reach, go in
+[Discussions](https://github.com/magikh0e/headfit/discussions).
+
 ## Where it came from
 
 Headfit was written inside [PrintVault](https://github.com/magikh0e/PrintVault),
