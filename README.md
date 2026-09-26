@@ -1,5 +1,7 @@
 # Headfit
 
+![Headfit](docs/banner.png)
+
 A helmet and mask fit bench that runs in your browser.
 
 Printing a helmet is hours of work and often days of it, and you usually find
@@ -55,6 +57,17 @@ python -m http.server 8000
 
 There is no build step and no dependency to install. Three.js is inlined in the
 file, which is most of its size.
+
+## Where it came from
+
+Headfit was written inside [PrintVault](https://github.com/magikh0e/PrintVault),
+a local-first manager for a folder full of print files, and it is still served
+from that project's site. It moved out on 2026-09-25 because it is a separate
+tool on its own version number, and being a file in someone else's repo meant it
+had no page, no releases and no issues of its own.
+
+Nothing here depends on PrintVault, and nothing there depends on this. If you
+use both, Settings in PrintVault has a button that opens this.
 
 ## Licence
 

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <!--
+    The banner at the top of the README. Same palette, grid, ticks and mark as
+    the social cards, at a shape that does not push the first paragraph off the
+    screen: a 1280x640 card takes half a laptop display on its own.
+
+    Source for docs/banner.png. Render it with tools/make-card.sh banner.
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12161e"/><stop offset="1" stop-color="#0a0c10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#ff7a2f" stop-opacity=".24"/><stop offset="1" stop-color="#ff7a2f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a2f"/><stop offset="1" stop-color="#ffb057"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#677184" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#grid)"/>
+  <rect width="1280" height="340" fill="url(#glow)"/>
+
+  <g stroke="#ff7a2f" stroke-opacity=".5" stroke-width="2" fill="none">
+    <path d="M32 54V32h22"/><path d="M1226 32h22v22"/><path d="M1248 286v22h-22"/><path d="M54 308H32v-22"/>
+  </g>
+
+  <g transform="translate(64,50) scale(1.55)">
+    <path d="M16 2 3 9v14l13 7 13-7V9z" fill="none" stroke="#e9edf4" stroke-opacity=".38" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M3 9l13 6.6L29 9M16 15.6V30" fill="none" stroke="#e9edf4" stroke-opacity=".38" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M16 2 3 9l13 6.6L29 9z" fill="#ff7a2f"/>
+  </g>
+  <text x="126" y="88" font-size="40" font-weight="700" fill="#e9edf4" letter-spacing="-1.2">Head<tspan fill="#ff7a2f">fit</tspan></text>
+
+  <text x="64" y="176" font-size="46" font-weight="800" fill="#e9edf4" letter-spacing="-2">Check the fit <tspan fill="url(#hot)">before the print.</tspan></text>
+  <text x="64" y="222" font-size="22" fill="#8f9aac" letter-spacing="-.3">Three tape measurements, a helmet STL, and the gap between them.</text>
+
+  <g font-size="16" font-weight="600" letter-spacing="1.3">
+    <rect x="64" y="256" width="202" height="40" rx="3" fill="none" stroke="#313d4e"/>
+    <text x="84" y="282" fill="#e9edf4">CLEARANCE MAP</text>
+    <rect x="280" y="256" width="176" height="40" rx="3" fill="none" stroke="#313d4e"/>
+    <text x="300" y="282" fill="#e9edf4">MASK SEALS</text>
+    <rect x="470" y="256" width="170" height="40" rx="3" fill="none" stroke="#313d4e"/>
+    <text x="490" y="282" fill="#e9edf4">TEST RINGS</text>
+  </g>
+
+  <!-- the head with a shell standing off it, lifted from the card -->
+  <g transform="translate(960,46) scale(0.72)">
+    <ellipse cx="128" cy="330" rx="130" ry="18" fill="#ff7a2f" opacity=".16"/>
+
+    <path d="M128 36
+             c62 0 104 46 104 108
+             c0 26 -8 44 -22 58
+             l-6 20 l-18 6
+             c2 18 -6 30 -24 34
+             l0 26
+             c0 14 8 20 20 24
+             l0 22 l-108 0 l0 -22
+             c14 -6 22 -16 22 -34
+             l0 -34
+             c-38 -18 -62 -56 -62 -100
+             c0 -62 42 -108 94 -108 z"
+          fill="#e7ebf1" fill-opacity=".92"/>
+    <ellipse cx="96" cy="158" rx="15" ry="21" fill="#cfd6e0" fill-opacity=".9"/>
+
+    <path d="M2 182 C2 76 58 0 128 0 C198 0 254 76 254 182"
+          fill="none" stroke="#ff7a2f" stroke-opacity=".16" stroke-width="32" stroke-linecap="round"/>
+    <path d="M2 182 C2 76 58 0 128 0 C198 0 254 76 254 182"
+          fill="none" stroke="url(#hot)" stroke-width="12" stroke-linecap="round"/>
+
+    <g stroke="#57cdff" stroke-width="3">
+      <path d="M128 34 L128 6" stroke-dasharray="5 5" stroke-opacity=".85"/>
+      <path d="M117 6 h22 M117 34 h22" stroke-opacity=".95"/>
+    </g>
+    <rect x="150" y="0" width="116" height="42" rx="5" fill="#0f141b" stroke="#2a3340"/>
+    <text x="208" y="30" font-size="24" font-weight="700" fill="#57cdff" text-anchor="middle"
+          font-family="Consolas, Menlo, monospace">12 mm</text>
+  </g>
+</svg>
