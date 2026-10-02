@@ -190,6 +190,10 @@ dialog p,dialog li{font-size:13.5px; color:var(--ink2); line-height:1.55}
 .hdet summary::before{content:'▸ '; color:var(--ink3)}
 .hdet[open] summary::before{content:'▾ '}
 .hdin{padding:8px 0 2px}
+/* Nothing else in here is a link, so anchors would otherwise come out in the
+   browser's default blue on a near black panel. */
+dialog a{color:var(--accent); text-decoration:none}
+dialog a:hover{text-decoration:underline}
 .hdin p{margin:0 0 9px}
 .nver{display:flex; align-items:baseline; gap:8px; margin:12px 0 4px}
 .nver b{font-size:13px; color:var(--ink)}
@@ -292,6 +296,15 @@ kbd{font:500 11px/1 var(--mono); border:1px solid var(--line2); border-bottom-wi
   </details>
 
   <details class="hdet">
+    <summary>Free, and where it comes from</summary>
+    <div class="hdin">
+      <p>Headfit is free and GPL-3.0, written in spare time, with no accounts, no tracking and nothing uploaded. The source is at <a href="https://github.com/magikh0e/headfit" target="_blank" rel="noopener noreferrer">github.com/magikh0e/headfit</a>. A helmet this said would clear your head and then did not is the single most useful thing you can report, with the measurements you used.</p>
+      <p>If it has saved you a helmet's worth of filament, there is <a href="https://buymeacoffee.com/magikh0e" target="_blank" rel="noopener noreferrer">buy me a beer</a> for a one off, or <a href="https://www.patreon.com/magikh0e" target="_blank" rel="noopener noreferrer">Patreon</a> for something monthly.</p>
+      <p>It was written inside <a href="https://printvault.magikh0e.pl/" target="_blank" rel="noopener noreferrer">PrintVault</a>, a local-first manager for a folder full of print files, which is where the mark in the corner goes back to.</p>
+    </div>
+  </details>
+
+  <details class="hdet">
     <summary>What changed</summary>
     <div class="hdin" id="notes"></div>
   </details>
@@ -332,12 +345,15 @@ var TAU = Math.PI*2;
    changes against. Everything before it is in the repository history rather
    than pretended to be a release. Bump it when the tool changes, not when the
    page is merely redeployed. */
-var APP_VERSION = '0.8.1';
+var APP_VERSION = '0.8.2';
 
 /* Newest first. 0.1.0 is where versioning started rather than where the tool
    did, so it covers everything that existed by then in one entry instead of
    inventing releases that never happened. */
 var NOTES = [
+  ['0.8.2', [
+    'Help says what this is, what it costs, and where the source lives. It had none of that: a tool with no licence on screen, no repo link and no way to tell whether anybody maintains it.'
+  ]],
   ['0.8.1', [
     'The head is smooth. It had faint contour rings around it, one for every keyframe in its profile, because each segment was eased in and out and so the surface briefly stopped changing sixteen times on the way up. Interpolated properly now.'
   ]],
