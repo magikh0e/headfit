@@ -1,0 +1,41 @@
+# Headfit has no build step, so nothing stands between an edit and the file
+# people run. This is the only thing that does.
+#
+# It compiles every inline script without executing one, which is the failure
+# worth catching: a stray bracket in a 720 KB single file is a blank viewport,
+# and the person who finds out is somebody who came to measure their head.
+#
+# It also enforces the two guards PrintVault's tools/headfit.sh applies before
+# it will deploy the file, the 300 KB floor and the title, so a push fails here
+# rather than a deploy failing later for a reason nobody connects to the commit.
+#
+# On a tag it additionally requires the tag and APP_VERSION to agree, because a
+# release page that names one version while its asset is another is worse than
+# having no release at all.
+
+name: check
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the file
+        run: node tools/check.mjs
+
+      # Only on a tag, and the tag is passed in rather than read from the
+      # environment inside the script, so the same command runs by hand.
+      - name: Check the tag matches the version
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: node tools/check.mjs "${GITHUB_REF_NAME}"
