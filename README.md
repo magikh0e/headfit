@@ -12,6 +12,18 @@ where the two collide before you commit the filament.
 **Live at <https://printvault.magikh0e.pl/headfit.html>** — nothing to install,
 no account, and nothing you load ever leaves your browser.
 
+### Watch it
+
+<a href="https://printvault.magikh0e.pl/#reel"><img src="docs/reel-poster.webp" width="300"
+ alt="Headfit painting clearance onto a head"></a>
+
+Half a minute of it, from the second half of a reel that starts with
+[PrintVault](https://github.com/magikh0e/PrintVault): a head built from tape
+measurements, a helmet put where you would wear it, and the clearance painted
+on, red where it bites. It plays on
+[the site](https://printvault.magikh0e.pl/#reel). GitHub will not play a video
+stored in a repo, which is why this is a poster rather than a player.
+
 ## What it does
 
 - **Clearance, painted on.** Load a helmet or a mask and the head is coloured by
