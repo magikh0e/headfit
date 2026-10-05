@@ -1,0 +1,83 @@
+name: A helmet or mask that did not fit
+description: Headfit said it would clear, and on your head it did not. Or the other way round.
+title: "fit: "
+labels: [fit]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the most useful report the project gets. The model is built from three
+        numbers and checked against one real head, so the cases where it disagrees with
+        yours are the only way it improves.
+
+        **This issue is public.** The measurements below are measurements of your body.
+        Rounding them to the nearest 5 mm is fine and does not hurt the report. Do not
+        paste a share link: those carry your numbers in the URL.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The number beside the name in the header, for example 0.8.3.
+      placeholder: "0.8.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Which mode
+      options:
+        - Helmet, where a gap is what you want
+        - Mask seal, where a gentle press is what you want
+    validations:
+      required: true
+
+  - type: textarea
+    id: measurements
+    attributes:
+      label: The three measurements you entered
+      description: Circumference matters most, since everything else is scaled to it.
+      value: |
+        Circumference:
+        Front to back:
+        Side to side:
+        Anything else you changed from the default:
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What Headfit told you
+      description: >
+        The reading at the top of the viewport, and the section cut if you used it.
+        "Interference on 2.1% of the head", "closest gap 4 mm", that sort of thing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened on your head
+      description: Where it was tight or loose, and by roughly how much if you can tell.
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: The model
+      description: >
+        A link to it if it is public, or just say what it was. Do not attach an STL you
+        are not allowed to share.
+    validations:
+      required: false
+
+  - type: textarea
+    id: anything
+    attributes:
+      label: Anything else
+      description: A screenshot of the clearance map is worth a lot here.
+    validations:
+      required: false

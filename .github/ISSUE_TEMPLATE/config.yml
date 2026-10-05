@@ -1,0 +1,16 @@
+# Blank issues stay off. The two forms ask for the things that are tedious to go
+# back and ask for one at a time, and a head shape question is a discussion
+# rather than a defect.
+blank_issues_enabled: false
+contact_links:
+  - name: A head shape it cannot reach, or an idea
+    url: https://github.com/magikh0e/headfit/discussions
+    about: >
+      Measurements that came out wrong, a face the model does not match, a mask whose
+      seal edge it could not find, or something you want it to do. Discussions, not issues.
+  - name: Questions about PrintVault, the file manager
+    url: https://github.com/magikh0e/PrintVault/discussions
+    about: Headfit grew out of it, but it is a separate project with its own board.
+  - name: Try it first
+    url: https://printvault.magikh0e.pl/headfit.html
+    about: The current version always runs here, so check the problem is still there.

@@ -1,0 +1,67 @@
+name: Something is broken
+description: It will not load, a control does nothing, an export comes out wrong, the page throws an error.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One HTML file, no build step and no server, so almost everything that goes wrong
+        goes wrong in your browser and leaves a trace in its console. That trace is
+        usually the whole answer.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The number beside the name in the header.
+      placeholder: "0.8.3"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      placeholder: "Chrome 141 on Windows 11, Safari 18 on iPad"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did
+      description: Enough for somebody else to arrive at the same screen.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: >
+        F12, then the Console tab, then reload and do it again. Paste anything red.
+        Leave this empty if there is nothing.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: file
+    attributes:
+      label: Does it involve a file you loaded
+      options:
+        - label: It happens with a model I loaded from disk
+        - label: It happens with the generated shell, with nothing loaded
+        - label: It happens with a scan loaded as the head
