@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Headfit — helmet and mask fit bench</title>
-<meta name="description" content="A browser tool for checking whether a helmet will fit before you print it. Build a head from tape measurements, drop in an STL, see where the clearance runs out, and print a ten minute test ring instead of a helmet that takes days.">
+<meta name="description" content="Check a helmet or mask fits before you print it. Build a head from three tape measurements, load an STL, and see where it clears and where it bites.">
 <link rel="canonical" href="https://printery.magikh0e.com/headfit.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://printery.magikh0e.com/headfit.html">
@@ -104,6 +104,8 @@ button,input,select{font:inherit;color:inherit}
 .brand .home{display:flex; align-self:center; color:var(--ink2); text-decoration:none; border-radius:5px}
 .brand .home svg{width:21px; height:21px; display:block}
 .brand .home:hover{color:var(--ink)}
+.brand h1{display:flex; align-items:baseline; gap:9px; margin:0;
+  font-size:inherit; font-weight:inherit}
 .brand b{font-weight:700; letter-spacing:-.02em; font-size:17px}
 .brand span{color:var(--ink3); font-size:12px}
 .brand .ver{font-family:var(--mono); font-size:10.5px; letter-spacing:.02em; color:var(--ink3);
@@ -236,7 +238,7 @@ kbd{font:500 11px/1 var(--mono); border:1px solid var(--line2); border-bottom-wi
           <path d="M16 2 3 9l13 6.6L29 9z" fill="#ff7a2f"/>
         </svg>
       </a>
-      <b>Headfit</b><span>helmet and mask fit bench</span><span class="ver" id="ver"></span>
+      <h1><b>Headfit</b> <span>helmet and mask fit bench</span></h1><span class="ver" id="ver"></span>
     </div>
     <div class="seg" id="views">
       <button data-v="iso" aria-pressed="true">Iso</button>
