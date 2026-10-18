@@ -8,7 +8,7 @@
 # GitHub and every link preview want a raster. Redraw the svg, re-run this.
 #
 # The Open Graph card for the page itself is deliberately not here. It belongs
-# to printvault.magikh0e.pl, which serves the page, so it is site/og-headfit.svg
+# to printery.magikh0e.com, which serves the page, so it is site/og-headfit.svg
 # in that repo and is rendered and deployed by its tools/make-og.sh. A copy
 # lived here for a week and was identical to that one, which is exactly how a
 # second copy starts: harmless until somebody edits one of them.

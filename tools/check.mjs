@@ -7,7 +7,7 @@
 // rather than as a blank viewport.
 //
 // The size and title checks are not arbitrary. They are the same two guards
-// PrintVault's tools/headfit.sh applies before it will upload the file, so this
+// Printery's tools/headfit.sh applies before it will upload the file, so this
 // catches at push time what would otherwise stop a deploy.
 //
 //   node tools/check.mjs          check headfit.html

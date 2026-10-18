@@ -8,9 +8,9 @@ contact_links:
     about: >
       Measurements that came out wrong, a face the model does not match, a mask whose
       seal edge it could not find, or something you want it to do. Discussions, not issues.
-  - name: Questions about PrintVault, the file manager
-    url: https://github.com/magikh0e/PrintVault/discussions
+  - name: Questions about Printery, the file manager
+    url: https://github.com/magikh0e/Printery/discussions
     about: Headfit grew out of it, but it is a separate project with its own board.
   - name: Try it first
-    url: https://printvault.magikh0e.pl/headfit.html
+    url: https://printery.magikh0e.com/headfit.html
     about: The current version always runs here, so check the problem is still there.

@@ -5,7 +5,7 @@
 # worth catching: a stray bracket in a 720 KB single file is a blank viewport,
 # and the person who finds out is somebody who came to measure their head.
 #
-# It also enforces the two guards PrintVault's tools/headfit.sh applies before
+# It also enforces the two guards Printery's tools/headfit.sh applies before
 # it will deploy the file, the 300 KB floor and the title, so a push fails here
 # rather than a deploy failing later for a reason nobody connects to the commit.
 #

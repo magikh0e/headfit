@@ -9,7 +9,7 @@ out it doesn't fit after all of that. Headfit builds a model of your head from
 three tape measurements, takes the STL you were about to print, and shows you
 where the two collide before you commit the filament.
 
-**Live at <https://printvault.magikh0e.pl/headfit.html>** — nothing to install,
+**Live at <https://printery.magikh0e.com/headfit.html>**: nothing to install,
 no account, and nothing you load ever leaves your browser.
 
 ### Watch it
@@ -18,10 +18,10 @@ no account, and nothing you load ever leaves your browser.
  alt="Headfit painting clearance onto a head"></a>
 
 Half a minute of it, from the second half of a reel that starts with
-[PrintVault](https://github.com/magikh0e/PrintVault): a head built from tape
+[Printery](https://github.com/magikh0e/Printery): a head built from tape
 measurements, a helmet put where you would wear it, and the clearance painted
 on, red where it bites. It plays on [YouTube](https://youtu.be/B8cpOXRhWRE) or on
-[the site](https://printvault.magikh0e.pl/#reel). GitHub will not play a video
+[the site](https://printery.magikh0e.com/#reel). GitHub will not play a video
 stored in a repo, which is why this is a poster rather than a player.
 
 ## What it does
@@ -89,14 +89,14 @@ edge on, or a head shape the superellipse cannot reach, go in
 
 ## Where it came from
 
-Headfit was written inside [PrintVault](https://github.com/magikh0e/PrintVault),
+Headfit was written inside [Printery](https://github.com/magikh0e/Printery),
 a local-first manager for a folder full of print files, and it is still served
 from that project's site. It moved out on 2026-09-25 because it is a separate
 tool on its own version number, and being a file in someone else's repo meant it
 had no page, no releases and no issues of its own.
 
-Nothing here depends on PrintVault, and nothing there depends on this. If you
-use both, Settings in PrintVault has a button that opens this.
+Nothing here depends on Printery, and nothing there depends on this. If you
+use both, Settings in Printery has a button that opens this.
 
 ## Licence
 
