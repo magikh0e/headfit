@@ -30,7 +30,12 @@ const bytes = Buffer.byteLength(src)
 if (bytes < MIN_BYTES) fail(`${FILE} is ${bytes} bytes, under the ${MIN_BYTES} the deploy requires`)
 else pass(`${Math.round(bytes / 1024)} KB`)
 
-if (!/<title>Headfit/.test(src)) fail('no <title>Headfit, which the deploy checks for')
+// Headfit anywhere in the title, not at the front of it. The guard is here to
+// catch a truncated download or an error page wearing a 200, and anchoring it
+// to the first word quietly made the title un-editable: the SEO pass wanted to
+// lead with the question people actually search, and this failed the build for
+// it. Mentioning the name is the real test; its position never was.
+if (!/<title>[^<]*Headfit/.test(src)) fail('no Headfit in the <title>, which the deploy checks for')
 else pass('title')
 
 // The version lives in one place and everything else is derived from it.
